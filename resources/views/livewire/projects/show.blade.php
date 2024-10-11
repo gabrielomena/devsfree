@@ -1,5 +1,3 @@
-<div>
-    componente SHOW
-    <br>
-    {{ $project->title }}
+<div class="col-span-2">
+    <x-projects.card :$project />
 </div>

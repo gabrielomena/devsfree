@@ -1,7 +1,11 @@
 <div>
-    <input wire:model.live="busca" />
+    <h1>Meu componente livewire</h1>
+    <input wire:model.live="search" />
     <br>
-    @foreach ($users as $user)
+
+    <ul>
+        @foreach ($users as $user)
         <li>{{ $user->name }}</li>
-    @endforeach
+        @endforeach
+    </ul>
 </div>
